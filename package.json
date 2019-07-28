@@ -1,7 +1,7 @@
 {
   "proxy": "https://music-studio-api.herokuapp.com/",
   "name": "client",
-  "version": "12.7.0",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "autoprefixer": "7.1.6",
@@ -101,6 +101,7 @@
     "node": "^12.7.0",
     "react-pdf": "^4.1.0",
     "sw-precache-webpack-plugin": "^0.11.5",
+    "uglifyjs-webpack-plugin": "^2.1.3",
     "url-loader": "^0.6.2",
     "webpack": "4.38.0",
     "webpack-manifest-plugin": "^2.0.4"
