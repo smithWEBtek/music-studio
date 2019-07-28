@@ -1,7 +1,6 @@
 {
   "proxy": "https://music-studio-api.herokuapp.com/",
   "name": "client",
-  "version": "11.14.0",
   "private": true,
   "dependencies": {
     "autoprefixer": "7.1.6",
