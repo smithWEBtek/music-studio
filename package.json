@@ -1,6 +1,7 @@
 {
   "proxy": "https://music-studio-api.herokuapp.com/",
   "name": "client",
+  "version": "12.7.0",
   "private": true,
   "dependencies": {
     "autoprefixer": "7.1.6",
@@ -97,6 +98,7 @@
     "eslint-loader": "^2.1.2",
     "file-loader": "^1.1.6",
     "moment": "^2.24.0",
+    "node": "^12.7.0",
     "react-pdf": "^4.1.0",
     "url-loader": "^0.6.2",
     "webpack": "4.38.0"
