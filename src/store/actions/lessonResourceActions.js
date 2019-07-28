@@ -52,6 +52,33 @@ export const fetchLessonResources = () => {
   }
 }
 
+
+//-----UPDATE RESOURCE ACTIONS-----------------------------
+export const updateLessonResourceStart = () => {
+  return { type: actionTypes.UPDATE_RESOURCE_START }
+}
+export const updateLessonResourceSuccess = () => {
+  return { type: actionTypes.UPDATE_RESOURCE_SUCCESS }
+}
+export const updateLessonResourceFail = (error) => {
+  return { type: actionTypes.UPDATE_RESOURCE_FAIL, error: error }
+}
+export const updateLessonResource = (data, history) => {
+  return dispatch => {
+    dispatch(updateLessonResourceStart())
+    LessonResourceService.updateLessonResource(data)
+      .then(response => {
+        dispatch({ type: actionTypes.UPDATE_RESOURCE, updatedResourceData: response })
+        history.goBack()
+        dispatch(updateLessonResourceSuccess())
+      })
+      .catch(error => {
+        dispatch(updateLessonResourceFail(error))
+      })
+  }
+}
+
+
 //-----DELETE LESSON_RESOURCE ACTIONS-----------------------------
 export const deleteLessonResourceStart = () => {
   return { type: actionTypes.DELETE_LESSON_RESOURCE_START }

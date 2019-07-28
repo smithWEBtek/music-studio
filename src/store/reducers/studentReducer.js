@@ -77,7 +77,7 @@ const reducer = (state = initialState, action) => {
       //     ...state.students.slice(studentIndex + 1, state.students.length)
       //   ]
       // };
-      const updatedStudentsArray = state.students.map(student => student.id == action.updatedStudentData.id ? action.updatedStudentData : student)
+      const updatedStudentsArray = state.students.map(student => student.id === action.updatedStudentData.id ? action.updatedStudentData : student)
       return Object.assign({}, state, { students: updatedStudentsArray })
 
 
