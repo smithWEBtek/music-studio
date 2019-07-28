@@ -10,7 +10,7 @@ const Vid = (props) => {
         height="450"
         src={props.url}
         frameBorder="0"
-        allowFullScreen="true">
+        allowFullScreen={true}>
       </iframe>
     </div>
   )
