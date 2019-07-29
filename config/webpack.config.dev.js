@@ -27,9 +27,6 @@ const env = getClientEnvironment(publicUrl);
 // It is focused on developer experience and fast rebuilds.
 // The production configuration is different and lives in a separate file.
 module.exports = {
-  optimization: {
-    minimizer: [new UglifyJsPlugin()],
-  },
   mode: 'development',
   // You may want 'eval' instead if you prefer to see the compiled output in DevTools.
   // See the discussion in https://github.com/facebookincubator/create-react-app/issues/343.
